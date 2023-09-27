@@ -1,8 +1,7 @@
 name: Release
 on:
-  create:
-    tags:
-    - v*
+  schedule:
+    - cron: 15 10 * * *
 
 jobs:
   release:
